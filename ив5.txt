@@ -1,0 +1,22 @@
+1 - not x or not y and z
+2 - (x and not y) or (z and not y)
+X Y Z ~Y&Z 1 X&~Y Z&~Y 2
+0 0 0   0  1   0   0   0
+0 0 1   1  1   0   1   1
+0 1 0   0  1   0   0   0
+0 1 1   0  1   0   0   0
+1 0 0   0  0   1   0   1
+1 0 1   1  1   1   1   1
+1 1 0   0  0   0   0   0
+1 1 1   0  0   0   0   0
+
+
+((x and (z or x)) or (not y and (z or x))) or
+((not x and (not z and not x)) or (y and (not z and not x)))
+
+(not z or not x) and (not x or y)
+
+
+
+(z or x) <-> not(not x and y)   z or x <-> x or not y  =  ((z or x) and (x or not y)) or (not(z or x) and not(x or not y)) =
+((z or x) and (x or not y)) or ((not z and not x) and (not x or y) =
